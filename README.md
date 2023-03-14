@@ -1,7 +1,6 @@
 # micropython_save_config_sample
 
-<div class="content">thanks to everybody. I thinks I will go with ujson.<br>
-<br>
+<div class="content">
 Following some examples that I found on line for future reference:<br>
 <br>
 Write data to a file:
