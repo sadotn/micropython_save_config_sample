@@ -1,19 +1,21 @@
 # micropython_save_config_sample
 
+<div class="content">thanks to everybody. I thinks I will go with ujson.<br>
+<br>
+Following some examples that I found on line for future reference:<br>
+<br>
 Write data to a file:
-CODE: SELECT ALL
-
-import json
+<div class="codebox"><pre><code>import json
 
 config = {'key1': 'value1', 'key2': 'value2'}
 
 f = open('config.json', 'w')
 f.write(ujson.dumps(config))
 f.close()
-Read data from a file:
-CODE: SELECT ALL
+</code></pre></div>
 
-import json
+Read data from a file:
+<div class="codebox"><pre><code>import json
 
 f = open('config.json', 'r')
 c = ujson.loads(f.readall())
@@ -25,16 +27,15 @@ config['key3'] = 'value3'
 f = open('config.json', 'w')
 f.write(ujson.dumps(config))
 f.close()
- 
+ </code></pre></div>
+
 Some more info about nested dictionaries:
-CODE: SELECT ALL
-
->>> d = {}
->>> d['dict1'] ={}
->>> d['dict2'] ={}
->>> d['dict1']['innerkey1'] = 'value1'
->>> d['dict2']['innerkey2'] = 'value2'
->>> d
+ <div class="codebox"><pre><code>&gt;&gt;&gt; d = {}
+&gt;&gt;&gt; d['dict1'] ={}
+&gt;&gt;&gt; d['dict2'] ={}
+&gt;&gt;&gt; d['dict1']['innerkey1'] = 'value1'
+&gt;&gt;&gt; d['dict2']['innerkey2'] = 'value2'
+&gt;&gt;&gt; d
 {'dict2': {'innerkey2': 'value2'}, 'dict1': {'innerkey1': 'value1'}}
-
- 
+&gt;&gt;&gt; 
+</code></pre></div>
