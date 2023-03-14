@@ -38,7 +38,7 @@ Some more info about nested dictionaries:
 &gt;&gt;&gt; </code></pre></div>
 
  
-<div class="content"><noscript><style>.lazyload-placeholder { display: none; }</style></noscript><h3 id="introduction">Introduction</h3>
+<h3 id="introduction">Introduction</h3>
 <blockquote>
 <p>In this guide, we'll take a look at how to read and write JSON data from and to a file in Python, using the <code>json</code> module.</p>
 </blockquote>
