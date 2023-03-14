@@ -17,7 +17,7 @@ Read data from a file:
 <div class="codebox"><pre><code>import json as js
 
 f = open('config.json', 'r')
-c = js.loads(f)
+c = js.loads(f.read())
 
 #edit the data
 config['key3'] = 'value3'
